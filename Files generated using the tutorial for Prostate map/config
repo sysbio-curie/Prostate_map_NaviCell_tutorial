@@ -1,0 +1,4 @@
+base: prostate_
+title: Prostate map
+name: prostate
+showDefaultCompartmentName: true
