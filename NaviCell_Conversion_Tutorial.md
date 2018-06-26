@@ -22,7 +22,7 @@ By Nicolas Sompairac, U900, Institut Curie
 
 6. Using NaviCell, it is possible to add links for species to specific databases such as Gene Cards or Gene Names. To do this, you have to generate a table containing two columns: The first column containing names of nodes in the network and the second column containing the correct ID of the wanted database. You can then integrate these IDs in the map file by using the python script  "Modify_annotations.py" (a help is provided by launching python Modify_annotations.py --help). An example of the usage of this this script is:
 
-   python Modify_annotations.py --corresp IDtable_file.txt --origin-file name.xml --result-file name.xml --link-type HUGO
+   `python Modify_annotations.py --corresp IDtable_file.txt --origin-file name.xml --result-file name.xml --link-type HUGO`
 
 ![](Images/Names_to_HUGO_table.png)
 
