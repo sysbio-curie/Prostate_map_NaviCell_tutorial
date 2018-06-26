@@ -58,5 +58,5 @@ By Nicolas Sompairac, U900, Institut Curie
 
 14. If the map is not visible, be sure that you have opened Chrome with the previous command. If the problem persists, you may use the following command line to repair the Google Maps API conflict:
 
-   find NaviCell-master/site/docroot/navicell/maps/**_map_name_**/master/ -name "index*" -exec sed -i 's/js?sensor=false/js?sensor=false\&v=3.30/g' {} +
+   `find NaviCell-master/site/docroot/navicell/maps/**_map_name_**/master/ -name "index*" -exec sed -i 's/js?sensor=false/js?sensor=false\&v=3.30/g' {} +`
 
