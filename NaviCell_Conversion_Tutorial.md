@@ -2,7 +2,7 @@
 
 By Nicolas Sompairac, U900, Institut Curie
 
-1. Create a working folder containing BiNoM_all.jar and NaviCell Factory ([https://github.com/sysbio-curie/NaviCell](https://github.com/sysbio-curie/NaviCell)).
+1. Create a working folder containing BiNoM_all.jar ([https://binom.curie.fr](https://binom.curie.fr)) and NaviCell Factory ([https://github.com/sysbio-curie/NaviCell](https://github.com/sysbio-curie/NaviCell)).
 
 2. Create a folder in "*NaviCell-master/factory/maps*" called "*name_src*"
 
