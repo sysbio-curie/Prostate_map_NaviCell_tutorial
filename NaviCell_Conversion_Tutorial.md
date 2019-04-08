@@ -16,9 +16,13 @@ By Nicolas Sompairac, U900, Institut Curie
 
    `sips -Z 320 name_master-n.png --out name_master-(n-1).png` (320 is width of new image, it should always be halved from the original. The largest image is the one with the biggest "n" and the smallest has to be “*name_master-0.png*”)
 
-5. Create "*.xml*" file by taking coordinates of topleft (x1,y1) and bottomright (x2,y2) nodes (from image with maximum size, this will be the maximum zoom), and run
+5. Create "*.xml*" file by indicating the ID and the coordinates of topleft (x1,y1) and bottomright (x2,y2) nodes (from image with maximum size, this will be the maximum zoom), and run
 
    `java -jar */BiNoM_all.jar fr.curie.BiNoM.pathways.BiNoMReactionFormatToCytoscapeConverter -brf */name.brf -points 'topleftnode(x1,y1):bottomrightnode(x2,y2)'`
+
+The ID and the coordinates can be found in the BRF network file. As an example, the command line should look like:
+   
+   `java -jar */BiNoM_all.jar fr.curie.BiNoM.pathways.BiNoMReactionFormatToCytoscapeConverter -brf */name.brf -points 'EGF(60.05742,86.434814):Caspase9(2092.9219,980.24225)'`
 
 6. Using NaviCell, it is possible to add links for species to specific databases such as Gene Cards or Gene Names. To do this, you have to generate a table containing two columns: The first column containing names of nodes in the network and the second column containing the correct ID of the wanted database. You can then integrate these IDs in the map file by using the python script  "Modify_annotations.py" (a help is provided by launching python Modify_annotations.py --help). An example of the usage of this this script is:
 
